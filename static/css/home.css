@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #232323;
+}
+
+.div3{
+    contain: '';
+    width: 50%;
+    height: 60vh;
+    /* border:2px solid white; */
+    position: relative;
+    top: 10vh;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div3-1{
+    font-family: 'Niconne', cursive;
+    color:white;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 50px;
+}
+.text {
+    font-family: 'Niconne', cursive;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #F80177; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 3px; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #F80177 }
+  }
+
+.name{
+    color: #F80177;
+}
+.div3-1 button a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+}
+.div3-1 button{
+    padding: 10px 15px;
+    margin-top: 15px;
+    background: transparent;
+    border: 2px solid #F80177;
+}
+.div3-1 button:hover{
+    background-color:#F80177 ;
+}
+.div3-1 button:active{
+    outline: none;
+}
+.div4{
+    contain: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(160, 157, 157, 0.15);
+    clip-path: circle(50% at 100% 0%);
+    opacity: .5;
+    z-index: -1000;
+}
+.div5{
+    contain: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right:32%;
+    top:32%;
+    background: linear-gradient(225.96deg, rgba(106, 101, 101, 0.3712) 18.33%, rgba(116, 115, 115, 0) 86.21%);
+    clip-path: circle(50% at 50% 50%);
+    opacity: .5;
+    z-index: -1000;
+    margin: 1px;
+}
+
+@media screen and (max-width:920px){
+    .div3-1 h1{
+        font-size: 25px;
+    }
+    .div3{
+        width: 90%;
+        margin: 0 auto;
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

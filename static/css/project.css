@@ -1,0 +1,158 @@
+.div-1{
+    font-family:'Roboto', sans-serif;
+    contain: '';
+    /* background-color: #fff; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-1-1{
+    contain: '';
+    /* background-color: pink; */
+    width: 500px;
+    height:auto;
+    margin-top: 50px;
+}
+.div-1-1 h1{
+    text-align: left;
+    color: white;
+}
+.div-1-1-1{
+    contain: '';
+    /* background-color: yellow; */
+    width: 500px;
+    height:100%;
+    padding: 10px;
+    padding-left: 0;
+}
+.typenav{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.typ{
+    padding: 7px 10px;
+}
+.typ a{
+    text-decoration: none;
+    color: white;
+}
+.typ:hover{
+    background-color: #F80177;
+    cursor: pointer;
+}
+.pro{
+    contain: '';
+    /* background-color: rgb(52, 109, 52); */
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    padding: 10px 0;
+    display: flex;
+}
+
+.title{
+    color: white;
+    width: 70%;
+    contain: '';
+    /* background-color: blue; */
+    padding: 10px 0;
+}
+
+.title h1{
+    font-size: 20px;
+}
+.title button{
+    padding: 8px 12px;
+    border: 3px solid #F80177;
+    background-color: transparent;
+    color: white;
+    margin-top: 10px;
+}
+.title button:hover{
+    background-color: #F80177;
+}
+.title button a{
+    color:white;
+    text-decoration: none;
+}
+.img{
+    width:30%;
+    contain: '';
+}
+.img img{
+    width: 95%;
+    height:95%;
+    box-shadow: 2px 2px 4px black;
+}
+
+.img img:hover{
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:700px){
+    .div-1-1{
+        margin-top: 30vh;
+    }
+    .div-1-1 .hd{
+        text-align: center;
+    }
+    .para{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:530px){
+    .div-1-1{
+        width: 300px;
+    }
+    .div-1-1 h1{
+        text-align: left;
+        color: white;
+    }
+    .div-1-1-1{
+        width: 300px;
+    }
+    .typenav{
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .typ{
+        padding: 5px 5px;
+    }
+    .pro{
+        width: 100%;
+    }
+    
+    .title{
+        width: 50%;
+    }
+    
+    
+    .img{
+        width:50%;
+        contain: '';
+        /* background-color: red; */
+    }
+    .img img{
+        width: 95%;
+        height:95%;
+    }
+    
+    .img img:hover{
+        width: 100%;
+        height:100%;
+        cursor: pointer;
+    }
+}

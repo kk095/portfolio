@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <title>home</title>
+</head>
+<body>
+
+{% include 'include1.html' %}
+<div class="div3">
+<div class="div3-1">
+<h1 class="text">{{text.line1}} <span class='name'> {{text.name}}</span></h1>
+<h1>{{text.line2}}</h1>
+<button><a href="{% url 'project' 'all' %}">View My Projects</a></button>
+</div>
+</div>
+<div class="div4">
+<div class="div4-1">
+</div>
+</div>
+<div class="div5">
+</div>
+</body>
+</html>

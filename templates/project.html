@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+    <title>my projects</title>
+</head>
+<body>
+    {% include 'include1.html' %}
+    <div class="div-1">
+    <div class="div-1-1">
+    <h1 class='hd'>My Projects</h1>
+    <div class="div-1-1-1">
+    <div class="typenav">
+    <div class="typ"><a href="{% url 'project' 'all' %}">All</a></div>
+    <div class="typ"><a href="{% url 'project' 'css' %}">Css</a></div>
+    <div class="typ"><a href="{% url 'project' 'javascript' %}">Javascript</a></div>
+    <div class="typ"><a href="{% url 'project' 'react' %}">React</a></div>
+    <div class="typ"><a href="{% url 'project' 'django' %}">Django</a></div>
+    </div>
+    {% for x in object_list %}
+    <div class="pro">
+    <div class="title">
+    <h1>{{x.title}}</h1>
+    <p class='para'>{{x.about}}</p>
+    <button><a href="{{x.repo}}">Code</a></button>
+    </div>
+    <div class="img">
+    <a href="{{x.link}}"><img src="media/{{x.img}}" alt="no"></a>
+    </div>
+    </div>
+    {% endfor %}
+
+    </div>
+    </div>
+    </div>
+</body>
+</html>
