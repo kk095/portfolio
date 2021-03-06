@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #232323;
+}
+.div1{
+    contain: '';
+    /* background-color: rgb(160, 87, 87); */
+    width: 85%;
+    height: 80px;
+    float: right;
+    position: relative;
+}
+.div1-1{
+    content: '';
+    background: #F80177;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 20px;
+    float: left;
+    margin-left: 25px;
+}
+.div1-1::before{
+    content: '';
+    background:white;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    z-index: -10;
+}
+.div1-1::after{
+    content: '';
+    background:white;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    right: 50%;
+    bottom: 100%;
+    z-index: -10;
+}
+
+.div1-2{
+    /* background-color: violet; */
+    height: 80px;
+    width: auto;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.div1-2 a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    /* background-color: yellow; */
+}
+.div1-2 a:hover{
+    background-color: #F80177;
+}
+.div1-2 a:active{
+    color: #c90262;
+}
+.div2{
+    width: auto;
+    height: auto;
+}
+.div2 img{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 75px;
+    height: 45vh;
+}
+.div1-2a{
+    content: '';
+    contain: '';
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    top: 0%;
+    right: 0%;
+    width: 200px;
+    height: 100vh;
+    visibility: hidden;
+    font-family: 'Roboto', sans-serif;
+    z-index: 100;
+}
+.menu_{
+    display: none;
+}
+.menu_box{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+
+.div1-2a a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    margin: 25px 0px;
+}
+
+.link{
+    display: none;
+    animation: a;
+    animation-delay: 1s;
+    animation-duration: .5s;
+}
+
+@keyframes a{
+    from{
+        display: none;
+    }
+    to{
+        display: block;
+    }
+}
+
+
+.div1-2a a:hover{
+    background-color: #F80177;
+    color: white;
+}
+.div1-2a a:active{
+    color: #c90262;
+}
+
+.a{
+    visibility: visible;
+    animation-name: menu;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes menu{
+    from{
+        width: 0px;
+        
+    }
+    to{
+        width: 200px;
+    }
+}
+
+svg{
+    color: white;
+    width: 50px;
+    height: 50px;
+    top: 2%;
+    right: 2%;
+    position: absolute;
+    z-index: 101;
+    visibility: hidden;
+}
+
+.b{
+    visibility: hidden;
+}
+.cancel{
+    animation-name:cancl;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-in;  
+}
+@keyframes cancl{
+    from{
+        width: 200px;
+        visibility: visible;
+    }
+    to{
+        width: 0px; 
+        visibility: hidden; 
+    }
+}
+
+.animate{
+    animation-name: animat;
+    animation-duration: 1.25s;
+}
+
+@keyframes animat{
+    from{
+        visibility: visible;
+            
+    }
+    to{
+        visibility: hidden;
+    }
+}
+
+.anim{
+    animation-name: anima;
+    animation-duration: 1.25s;
+}
+
+@keyframes anima{
+    from{
+        visibility: hidden;
+    }
+    to{
+        visibility: visible;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:800px){
+    .div2 img{        
+        width: 35px;
+    }
+}
+@media screen and (max-width:725px){
+    svg{        
+        visibility: visible;
+    }
+    .div1-2{
+        visibility: hidden;
+    }
+
+    .div2 img{
+        
+        height: 35vh;
+    }
+}
