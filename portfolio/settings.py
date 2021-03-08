@@ -7,8 +7,8 @@ TEMPLATE_DIR= os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
 
 
-SECRET_KEY = os.environ['SECRET_KEY']
-# SECRET_KEY = 'n9!emhpj(00lyku&$ur(4f!z+bba*snvpbmr_)u12tt&03wlrn'
+# SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'n9!emhpj(00lyku&$ur(4f!z+bba*snvpbmr_)u12tt&03wlrn'
 
 DEBUG = False
 
