@@ -27,6 +27,7 @@ class Education(models.Model):
 class Social(models.Model):
     name=models.CharField( max_length=50)
     img=models.ImageField( upload_to='images/')
+    link=models.URLField( max_length=200,default=None,null=True,blank=True)
 
 class Welcome(models.Model):
     name=models.CharField(max_length=50)
