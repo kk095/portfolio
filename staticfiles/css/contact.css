@@ -41,6 +41,7 @@
     border-bottom: 2px solid white;
     width: 380px;
     height: 40px;
+    color: white;
 }
 .input::placeholder{
     color: rgba(246, 241, 241, 0.45);
@@ -56,11 +57,15 @@
     border: 2px solid white;
     margin-bottom: 10px;
     height: 150px;
+    color:white;
 
 }
 .texteria:focus{
     height: 150px;
 
+}
+.clr{
+    color: white;
 }
 .form form button{
     padding: 7px 20px;
