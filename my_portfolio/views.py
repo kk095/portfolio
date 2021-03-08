@@ -3,7 +3,6 @@ from django.views.generic.edit import CreateView
 from django .views.generic import TemplateView,ListView
 from .forms import Contact_form
 from .models import Skill,Image,About,Education,Social,Welcome,MyProject,Document
-import PyPDF2
 
 
 # Create your views here.
