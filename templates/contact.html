@@ -19,7 +19,9 @@
     {% for input in form %}
     <div class="input_div">
     {{input}}<br>
+    <div class="clr">
     {{input.errors|striptags}}
+    </div>
     </div>
     {%endfor%}
     <button type="submit">SUBMIT</button>

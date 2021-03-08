@@ -127,7 +127,7 @@ body{
 .link{
     display: none;
     animation: a;
-    animation-delay: 1s;
+    animation-delay: .75s;
     animation-duration: .5s;
 }
 
@@ -152,7 +152,7 @@ body{
 .a{
     visibility: visible;
     animation-name: menu;
-    animation-duration: 1.25s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
@@ -182,7 +182,7 @@ svg{
 }
 .cancel{
     animation-name:cancl;
-    animation-duration: 1.25s;
+    animation-duration: 1s;
     animation-timing-function: ease-in;  
 }
 @keyframes cancl{
@@ -198,7 +198,7 @@ svg{
 
 .animate{
     animation-name: animat;
-    animation-duration: 1.25s;
+    animation-duration: 1s;
 }
 
 @keyframes animat{
@@ -213,7 +213,7 @@ svg{
 
 .anim{
     animation-name: anima;
-    animation-duration: 1.25s;
+    animation-duration: 1s;
 }
 
 @keyframes anima{
