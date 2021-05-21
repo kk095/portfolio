@@ -3,6 +3,8 @@ from django.views.generic.edit import CreateView
 from django .views.generic import TemplateView,ListView
 from .forms import Contact_form
 from .models import Skill,Image,About,Education,Social,Welcome,MyProject,Document
+from portfolio.settings import EMAIL_HOST_USER
+from django.core.mail import send_mail
 
 
 # Create your views here.
@@ -22,6 +24,13 @@ class Contact(CreateView):
         context = super().get_context_data(**kwargs)
         context["social"] = Social.objects.all()
         return context
+    def form_valid(self, form):
+        message=form.data.get('message')
+        name=form.data.get('name')
+        mail=form.data.get('email')
+        msg=f"email of user is {mail}.\n message is \n\n '{message}'"
+        send_mail(name,msg,EMAIL_HOST_USER,[EMAIL_HOST_USER],fail_silently=False)
+        return super().form_valid(form)
     
 
 class SkillListView(ListView):
