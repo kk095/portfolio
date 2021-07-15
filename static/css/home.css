@@ -14,7 +14,7 @@ body{
     contain: '';
     width: 50%;
     height: 60vh;
-    /* border:2px solid white; */
+    /* background-color: brown; */
     position: relative;
     top: 10vh;
     left: 25%;
@@ -28,9 +28,12 @@ body{
     font-family: 'Niconne', cursive;
     color:white;
     letter-spacing: 3px;
-    font-weight: 100;
     text-align: center;
     line-height: 50px;
+    /* background-color: chartreuse; */
+}
+.div3-1 h1{
+    font-weight: 1000;
 }
 .text {
     font-family: 'Niconne', cursive;
@@ -38,7 +41,7 @@ body{
     border-right: .15em solid #F80177; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 3px; /* Adjust as needed */
+    letter-spacing: 3px; /* Adjust as  needed */
     animation: 
         typing 3.5s steps(30, end),
         blink-caret .5s step-end infinite;
@@ -110,6 +113,20 @@ body{
     }
     .div3{
         width: 90%;
+        margin: 0 auto;
+        left: 0;
+    }
+}
+@media screen and (max-width:450px){
+    .div3-1 h1{
+        font-size: 5.5vw;
+    }
+    .div3-1{
+        width: 98%;
+        margin: auto;
+    }
+    .div3{
+        width: 95%;
         margin: 0 auto;
         left: 0;
     }
