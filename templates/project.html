@@ -12,7 +12,7 @@
     {% include 'include1.html' %}
     <div class="div-1">
     <div class="div-1-1">
-    <h1 class='hd'>My Projects</h1>
+    <h1 class='hd'>My Projects ({{object_list|length}})</h1>
     <div class="div-1-1-1">
     <div class="typenav">
     <div class="typ"><a href="{% url 'project' 'all' %}">All</a></div>
